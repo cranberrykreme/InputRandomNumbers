@@ -32,7 +32,10 @@ public class Main {
      * @return number of random numbers the user wants
      */
     public static String getNumber(){
+        // Get the amount of random numbers requested
         String num = JOptionPane.showInputDialog("How many random numbers should there be?");
+
+        // Return the amount of random numbers requested
         return num;
     }
     
