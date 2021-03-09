@@ -8,8 +8,8 @@ import javax.swing.JOptionPane; // Needed for input from user
  * It is not fully my own work
  */
 public class Main {
-    static Random rand;
-    static PrintWriter out;
+    private static Random rand;
+    private static PrintWriter out;
 
     public static void main(String[] args) throws Exception {
         System.out.println("This program will ask the user to " +
@@ -54,7 +54,7 @@ public class Main {
         for(int i = 0; i < num; i++){
             number = rand.nextInt();    // Create the random numbers
 
-            out.println(number);        // Write the numbers to a .txt file
+            out.println(i+1 + ". " + number);        // Write the numbers to a .txt file
         }
 
         // Close the file
